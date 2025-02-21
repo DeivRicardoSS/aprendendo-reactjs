@@ -1,0 +1,62 @@
+.container {
+    background-color: var(--gray-800);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.container div:has(img) {
+    display: flex;
+    gap: 1.5rem;
+
+    align-items: center;
+}
+
+.container div:has(img) div{
+    display: flex;
+    flex-direction: column;
+}
+
+.container div img {
+    width: 4rem;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--green-500);
+    padding: 0.2rem;
+    background-color: var(--gray-800);
+    
+}
+
+.container div:has(p) {
+    margin: 1.5rem 0;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-top: 1px solid var(--gray-600);
+
+    padding: 1.5rem 0;
+    
+}
+
+.container form textarea {
+    resize: none;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--gray-900);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: var(--gray-400);
+}
+
+.container form button {
+    padding: 1rem 1.5px;
+    width: 6.75rem;
+    background-color: var(--green-500);
+    color: var(--gray-200);
+    border-radius: 8px;
+    border: none;
+}

@@ -10,3 +10,7 @@
 
     width: 100%;
 }
+
+.container strong {
+    font-size: 1.599rem;
+}
