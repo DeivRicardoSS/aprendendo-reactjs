@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import { Comment } from "../Comment";
 
 export function Post({nome, cargo, img, time, post}) {
     return (
@@ -20,8 +21,14 @@ export function Post({nome, cargo, img, time, post}) {
             <form>
                 <strong>Deixe seu feedback</strong>
                 <textarea placeholder="Deixe seu comentário"/>
-                <button>Comentar</button>
+                <footer>
+                    <button>Comentar</button>
+                </footer>
             </form>
+
+            <div className={styles.commentList}>
+                <Comment/>
+            </div>
             
         </article>
     );

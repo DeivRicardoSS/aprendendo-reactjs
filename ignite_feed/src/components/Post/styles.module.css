@@ -50,7 +50,7 @@
 
     border-top: 1px solid var(--gray-600);
 
-    padding: 1.5rem 0;
+    padding-top: 1.5rem;
     
 }
 
@@ -79,9 +79,18 @@
     color: var(--gray-200);
     border-radius: 8px;
     border: none;
-    transition: 0.1s;
     font-weight: bold;
     cursor: pointer;
+}
+
+.container form footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.container form:focus-within footer {
+    visibility: visible;
+    max-height: none;
 }
 
 .container form button:hover {
@@ -94,4 +103,9 @@
 
 .container div:has(p) a:hover {
     color: var(--green-300);
+}
+
+.commentList {
+    margin-top: 2rem;
+    display: flex;
 }

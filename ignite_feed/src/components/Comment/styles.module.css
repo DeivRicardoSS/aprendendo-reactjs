@@ -1,0 +1,17 @@
+.container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.container > img {
+    width: 4rem;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container > div {
+    flex: 1;
+}
