@@ -7,12 +7,39 @@
 
 :root {
     --white: #fff;
-    --bkg-2: #333333;
-    --bkg: #1A1A1A;
+    --bkg-2: #1A1A1A;
+    --bkg: #0F0F0F;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
-    background-color: black;
+    background-color: var(--bkg);
     display: flex;
     flex-direction: column;
 }
+
+.scroll-bar::-webkit-scrollbar {
+    width: 14px;
+  }
+
+.scroll-bar::-webkit-scrollbar-track {
+    background: #1A1A1A;
+    border-radius: 0px;
+  }
+  
+.scroll-bar::-webkit-scrollbar-thumb {
+    background: #8BA4D5;
+    border-radius: 0px;
+    border:0px solid #8BA4D5;
+  }
+
+/* Estilos para Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #8BA4D5 #1A1A1A;
+  }
+                

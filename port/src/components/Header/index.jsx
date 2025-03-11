@@ -1,7 +1,14 @@
-import { InstagramLogo, Envelope, GithubLogo, WhatsappLogo } from "phosphor-react";
+import { InstagramLogo, Envelope, GithubLogo, WhatsappLogo, List, X } from "phosphor-react";
+import { useState } from "react";
 
 import styles from './styles.module.css';
 export function Header() {
+    const [menuAberto, setMenuAberto] = useState(false);
+
+    function toggleMenu() {
+        setMenuAberto(!menuAberto);
+    }
+
     return (
         <header className={styles.container}>
             <svg xmlns="http://www.w3.org/2000/svg" width="135" height="46" viewBox="0 0 135 46" fill="none">
@@ -12,18 +19,41 @@ export function Header() {
             </svg>
 
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Projetos</a>
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
             </nav>
 
             <div>
-                <InstagramLogo size={40} weight="duotone" />
-                <Envelope size={40} weight="duotone" />
-                <GithubLogo size={40} weight="duotone" />
-                <WhatsappLogo size={40} weight="duotone" />
+            <a href="">
+                <InstagramLogo size={32} weight="duotone" />
+                </a>
+                <a href="">
+                <Envelope size={32} weight="duotone" />
+                </a>
+                <a href="">
+                <GithubLogo size={32} weight="duotone" />
+                </a>
+                <a href="">
+                <WhatsappLogo size={32} weight="duotone" />
+                </a>
             </div>
+
+            <button
+            onClick={() => {
+                toggleMenu();
+            }}
+            >
+            {menuAberto ? <X size={32} /> : <List size={32} />}
+            </button>
+
+            <ul className={menuAberto ? styles.close : styles.open}>
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+            </ul>
         </header>
     );
 }
