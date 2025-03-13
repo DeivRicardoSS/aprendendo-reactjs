@@ -1,4 +1,4 @@
-import { InstagramLogo, Envelope, GithubLogo, WhatsappLogo, List, X } from "phosphor-react";
+import { InstagramLogo, Envelope, GithubLogo, WhatsappLogo, List, X, LinkedinLogo } from "phosphor-react";
 import { useState } from "react";
 
 import styles from './styles.module.css';
@@ -26,17 +26,17 @@ export function Header() {
             </nav>
 
             <div>
-            <a href="#">
+                <a href="https://www.instagram.com/deivs_05/" type="_blank">
                 <InstagramLogo size={32} weight="duotone" />
                 </a>
-                <a href="#">
+                <a href="deivysonrssantos@outlook.com" type="_blank">
                 <Envelope size={32} weight="duotone" />
                 </a>
-                <a href="https://github.com/DeivRicardoSS">
+                <a href="https://github.com/DeivRicardoSS" type="_blank">
                 <GithubLogo size={32} weight="duotone" />
                 </a>
-                <a href="#">
-                <WhatsappLogo size={32} weight="duotone" />
+                <a href="https://www.linkedin.com/in/deivyson-ricardo-33354425b/" type="_blank">
+                <LinkedinLogo size={32} weight="duotone" />
                 </a>
             </div>
 

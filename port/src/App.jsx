@@ -9,19 +9,29 @@ import { Habilidades } from './sections/Habilidades';
 import { Projetos } from './sections/Projetos';
 import { Footer } from './sections/Footer';
 
+import { BrowserRouter , Route, Switch } from "react-router-dom";
+
+import { Principal } from './screens/Principal';
+import { Detalhes } from './screens/Detalhes';
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Header/>
-      <Home/>
-      <Sobre/>
-      <Projetos/>
-      <Habilidades/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" extract component={Principal}/>
+        <Route path="/detalhes" component={Detalhes}/>
+      </Switch>    
+    </BrowserRouter>
   )
 }
 
 export default App
+
+{/* <Header/>
+      <Home/>
+      <Sobre/>
+      <Projetos/>
+      <Habilidades/>
+      <Footer/> */}

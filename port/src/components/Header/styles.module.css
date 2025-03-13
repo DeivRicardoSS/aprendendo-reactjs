@@ -99,7 +99,7 @@
 
 @media (max-width: 580px) {
     .container {
-        display: none;
+        
         & nav {
             display: none;
         }
