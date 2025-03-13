@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 20rem;
     height: 16rem;
+    flex-shrink: 0;
 
     color: white;
 
@@ -30,4 +31,10 @@
 
 .container:hover {
     filter: grayscale(0%);
+}
+
+@media (max-width: 580px) {
+    .container {
+        filter: grayscale(0%);
+    }
 }

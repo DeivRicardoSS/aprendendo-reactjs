@@ -23,18 +23,36 @@
         }
     }
 
-    & img {
-        width: 20%;
-    }
+    
+}
+
+.imgPc {
+    width: 20%;
+}
+
+.imgMobile {
+    display: none;
 }
 
 @media (max-width: 700px) {
     .container {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
         & div {
             width: 80%;
+            align-items: center;
         }
         & img {
-            display: none;
+            width: 50%;
         }
+        
+    }
+
+    .imgMobile {
+        display: block;
+    }
+    
+    .imgPc {
+        display: none;
     }
 }

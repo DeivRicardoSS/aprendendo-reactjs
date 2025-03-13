@@ -26,16 +26,16 @@ export function Header() {
             </nav>
 
             <div>
-            <a href="">
+            <a href="#">
                 <InstagramLogo size={32} weight="duotone" />
                 </a>
-                <a href="">
+                <a href="#">
                 <Envelope size={32} weight="duotone" />
                 </a>
-                <a href="">
+                <a href="https://github.com/DeivRicardoSS">
                 <GithubLogo size={32} weight="duotone" />
                 </a>
-                <a href="">
+                <a href="#">
                 <WhatsappLogo size={32} weight="duotone" />
                 </a>
             </div>

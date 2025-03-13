@@ -17,11 +17,21 @@
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+
+        & strong {
+            color: white;
+        }
+
+        & span {
+            color: #e2e1e1;
+        }
     }
 }
 
-.container {
-    & h2 {
-        font-size: 1.8rem;
+@media (max-width: 580px) {
+    .container {
+        & h2 {
+            font-size: 1.8rem;
+        }
     }
 }

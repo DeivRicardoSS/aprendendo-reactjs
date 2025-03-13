@@ -17,8 +17,8 @@ function App() {
       <Header/>
       <Home/>
       <Sobre/>
-      <Habilidades/>
       <Projetos/>
+      <Habilidades/>
       <Footer/>
     </>
   )

@@ -20,8 +20,22 @@
     }
 }
 
-.container {
-    & h2 {
-        font-size: 1.8rem;
+
+
+@media (max-width: 580px) {
+    
+    .container {
+        min-height: auto;
+        & h2 {
+            font-size: 1.8rem;
+        }
+
+        & div {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            width: 100%;
+            padding: 1rem;
+            justify-content: flex-start;
+        }
     }
 }

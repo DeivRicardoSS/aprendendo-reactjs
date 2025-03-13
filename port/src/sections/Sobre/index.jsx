@@ -18,7 +18,8 @@ export function Sobre() {
                     Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para me contatar pelas minhas redes sociais ou pelo meu e-mail, disponível na seção de Contato.
                 </p>
             </div>
-            <img src="../../assets/sobreimg.png" alt="ilustração" />
+            <img src="/assets/sobreimg2.png" className={styles.imgMobile} alt="ilustração" />
+            <img src="/assets/sobreimg.png" className={styles.imgPc} />
         </section>
     );
 }

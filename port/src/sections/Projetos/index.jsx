@@ -8,25 +8,25 @@ export function Projetos() {
             <div>
                 <CardProjeto
                     nome="Landing Page Combogó"
-                    img="../../assets/combogo.png"
+                    img="/assets/combogo.png"
                     desc="Landing page para a agência combogó."
                 />
 
                 <CardProjeto
                     nome="Shlomo"
-                    img="../../assets/shlomo.png"
+                    img="/assets/shlomo.png"
                     desc="Aplicativo de auxlílio de leitura."
                 />
 
                 <CardProjeto
                     nome="Teko - Ideação"
-                    img="../../assets/teko.png"
+                    img="/assets/teko.png"
                     desc="Ideação de uma plataforma de jogos em nuvem"
                 />
 
                 <CardProjeto
                     nome="PhyEdu - Ideação"
-                    img="../../assets/phyedu.png"
+                    img="/assets/phyedu.png"
                     desc="Ideação de uma plataforma de estudos online."
                 />
             </div>
